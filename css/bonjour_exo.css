@@ -1,0 +1,27 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+table {
+ padding: 20px;
+}
+
+thead {
+    padding: 25px;
+}
+
+th {
+    padding: 25px;
+    background-color: rgb(73, 122, 206);
+    color: white;
+    font-size: 20px;
+}
+
+td {
+    padding: 20px;
+    background-color: rgb(135, 61, 182);
+    color: white;
+    font-size: 15px;
+}
