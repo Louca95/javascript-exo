@@ -1,3 +1,5 @@
+while (true){
+
 let userChoice = prompt(
     "Entrez votre choix (pierre, feuille, ciseaux) :",
     ).toLowerCase();
@@ -14,6 +16,7 @@ let userChoice = prompt(
     } else {
     computerChoice = "ciseaux";
     }
+   
     
     resultMessage = "Ordinateur a choisi : " + computerChoice + ". ";
     
@@ -34,5 +37,7 @@ let userChoice = prompt(
     } else {
     resultMessage = "Choix invalide, veuillez entrer pierre, feuille ou ciseaux.";
     }
+
     
     alert(resultMessage);
+}
