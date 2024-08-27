@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu restaurant</title>
+    <link rel="stylesheet" href="css/menu_resto.css">
+</head>
+<body>
+    <h1>Choisissez votre plat</h1>
+    <div class="menu-container">
+        <div class="menu-item" >
+            <img src="img/pizza.jpg" onclick="restaurant(`Pizza`)" alt="Grande pizza appétissante au chorizo">
+            <p>Pizza</p>
+        </div>
+        <div class="menu-item">
+            <img src="img/pasta.jpg" onclick="restaurant(`Pasta`)" alt="Plat de tagliatelles à la bolognaise">
+            <p>Pâtes</p>
+        </div>
+        <div class="menu-item">
+            <img src="img/salad.jpg" onclick="restaurant(`Salad`)" alt="Assiette d'une salade césar">
+            <p>Salade</p>
+        </div>
+        <div class="menu-item" >
+            <img src="img/sushi.jpg" onclick="restaurant(`Sushi`)" alt="Plat de sushis et de maki">
+            <p>Sushi</p>
+        </div>
+    </div>
+
+    <p id="message"></p>
+
+    <script src="js/menu_resto.js"></script>
+</body>
+</html>
