@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
 		            <p>${array.text}</p>
 		            <span class="remove-button">${array.text}</span>
 		     `;
-		 	phraseList.appendChild(form);
+		 	arrayList.appendChild(form);
 			form.querySelector(".remove-button").addEventListener("click", () => {
 		 		removePhrase(id);
 		 	});
