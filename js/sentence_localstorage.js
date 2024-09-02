@@ -34,6 +34,18 @@ document.addEventListener("DOMContentLoaded", () => {
 			});
 		});
 	}
+    function getIdentity() {
+        let user = {
+            phrases: phrasesInput.value,
+            
+        };
+        
+        localStorage.setItem("phrases1", JSON.stringify(phrases1));
+        localStorage.setItem("user", JSON.stringify(user));
+        console.log(user);
+    }
+    getIdentity()
+    localStorage.setItem("phrases", "phrases");
 
 	// Fonction pour supprimer une phrase
 	const removePhrase = (index) => {

@@ -7,8 +7,15 @@ document.addEventListener("DOMContentLoaded", () => {
 		{ id: 4, text: "Apprendre en groupe c'est fun !" },
 	];
 
+	const storedPhrases = JSON.parse(localStorage.getItem("phrases"));
+	console.log(storedPhrases);
+
 	const phraseList = document.getElementById("sentences-list");
 	const noSentencesMsg = document.getElementById("no-sentences");
+
+	function savePhrases() {
+		localStorage.setItem("phrases", JSON.stringify(phrases));
+	}
 
 	// Fonction pour afficher les phrases
 	function displaySentences() {
@@ -39,6 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
 	const removePhrase = (index) => {
 		phrases.splice(index, 1); // Supprime la phrase du tableau
 		displaySentences(); // Réaffiche les phrases
+		savePhrases();
 	};
 
 	// Affiche les phrases initialement
