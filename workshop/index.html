@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WORKSHOP</title>
+    <link rel="stylesheet" href="css/workshop.css">
+</head>
+<body>
+    <h1>Exercice Authentification</h1>
+    <p>J'arrive sur un Espace Sécurisé au moyen du prénom et de l'âge.</p>
+    <p>Je dois saisir mon prénom et mon age pour être authentifié sur le site
+        (les infos sont en BDD en réalité, mais ici elles seront dans un tableau d'objet).</p>
+    <p>En cas d'échec une alerte m'informe du problème.
+    </p>
+    <p>Si tout se passe bien, un message de bienvenue m'accueille.
+    </p>
+
+    <form>
+        <label for="firstname">Prénom :</label>
+        <input type="text" id="firstname">
+        <br>
+        <label for="age">Age :</label>
+        <input type="text" id="age">
+        <br>
+        <input type="submit" value="Envoyer" id="send">
+    </form>
+
+    <div id="wrong">
+
+    </div>
+
+    <script src="js/workshop.js"></script>
+</body>
+</html>
